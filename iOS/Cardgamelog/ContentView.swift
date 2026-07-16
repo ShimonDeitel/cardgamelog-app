@@ -136,16 +136,16 @@ struct EntryFormView: View {
         NavigationStack {
             Form {
                 Section("Game") {
-                    TextField("Game", text: $\game)
+                    TextField("Game", text: $game)
                         .focused($focusedField)
                         .accessibilityIdentifier("field_game")
                 }
                 Section("Players") {
-                    TextField("Players", text: $\players)
+                    TextField("Players", text: $players)
                         .accessibilityIdentifier("field_players")
                 }
                 Section("Winner") {
-                    TextField("Winner", text: $\winner, axis: .vertical)
+                    TextField("Winner", text: $winner, axis: .vertical)
                         .accessibilityIdentifier("field_winner")
                 }
                 Section("Rating") {
